@@ -1,0 +1,110 @@
+/* ==========================================================
+   DESIGN SYSTEM "VOZ 22" · TOKENS
+   Fonte única de cor, tipo, espaço, forma e movimento.
+   Estudo de redesign Connect Alpha. Não é o site oficial.
+   ========================================================== */
+@font-face{font-family:"Urbanist";src:url("../fonts/Urbanist-Variable-Roman.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+
+:root{
+  /* ---- Cor: marca (extraída do site oficial) ---- */
+  --azul-950:#050F26;
+  --azul-900:#071946;
+  --azul-800:#0C2340;
+  --azul-700:#0F3366;
+  --azul-600:#003F7D;
+  --azul-500:#005BAA;   /* azul principal */
+  --azul-400:#0072BC;
+  --azul-300:#4FA0FF;
+  --azul-200:#A9CDF5;
+  --azul-100:#DCEBFA;
+  --azul-50:#EEF5F9;
+
+  --amarelo-700:#C99700;
+  --amarelo-600:#F2B400;
+  --amarelo-500:#FFCB05;   /* amarelo principal */
+  --amarelo-400:#FFDD55;
+  --amarelo-100:#FFF3C2;
+  --creme:#FFF7DC;
+
+  --verde-700:#07884F;
+  --verde-500:#12B24B;     /* verde da marca */
+  --verde-100:#D8F3E2;
+  --zap:#25D366;           /* só o botão de WhatsApp */
+  --live:#E5322D;          /* só "ao vivo" */
+
+  --tinta:#0A0E14;
+  --cinza-700:#3B4658;
+  --cinza-500:#64748B;
+  --cinza-300:#C6D0DE;
+  --cinza-200:#E2E8F0;
+  --branco:#FFFFFF;
+
+  /* ---- Cor: papéis semânticos ---- */
+  --texto:var(--tinta);
+  --texto-suave:var(--cinza-500);
+  --texto-inverso:#FFFFFF;
+  --texto-inverso-suave:#B8C8E4;
+  --acao:var(--amarelo-500);
+  --acao-texto:var(--azul-800);
+  --destaque:var(--amarelo-500);
+  --link:var(--azul-500);
+  --borda:var(--cinza-200);
+  --fundo-claro:var(--azul-50);
+  --fundo-escuro:var(--azul-800);
+
+  /* ---- Gradientes ---- */
+  --grad-hero:radial-gradient(120% 90% at 18% 0%,#0A63BE 0%,#064A91 42%,var(--azul-800) 100%);
+  --grad-escuro:linear-gradient(180deg,var(--azul-900),var(--azul-800));
+  --grad-amarelo:linear-gradient(160deg,var(--amarelo-400),var(--amarelo-500) 48%,var(--amarelo-600));
+  --grad-azul:linear-gradient(160deg,var(--azul-400),var(--azul-600));
+  --grad-fio:linear-gradient(90deg,var(--azul-500) 0 34%,var(--amarelo-500) 34% 67%,var(--verde-500) 67% 100%);
+
+  /* ---- Tipografia ---- */
+  --font-sans:"Urbanist","Gotham","Segoe UI",system-ui,-apple-system,sans-serif;
+  --font-cond:"Barlow Condensed","Arial Narrow","Urbanist",sans-serif;
+  --t-display:clamp(3.4rem,9.2vw,8.6rem);
+  --t-h1:clamp(2.7rem,6.4vw,5.6rem);
+  --t-h2:clamp(2.1rem,4.8vw,4.2rem);
+  --t-h3:clamp(1.3rem,2vw,1.75rem);
+  --t-h4:1.1rem;
+  --t-lead:clamp(1.1rem,1.55vw,1.4rem);
+  --t-body:1rem;
+  --t-small:.875rem;
+  --t-micro:.72rem;
+  --lh-tight:1.02;
+  --lh-snug:1.2;
+  --lh-body:1.6;
+  --track-tight:-.025em;
+  --track-wide:.2em;
+
+  /* ---- Espaço (base 4) ---- */
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:24px; --s-6:32px; --s-7:48px; --s-8:64px; --s-9:96px; --s-10:140px;
+  --gutter:clamp(20px,5vw,72px);
+  --maxw:1240px;
+  --sec-y:clamp(72px,10vw,150px);
+
+  /* ---- Forma ---- */
+  --r-sm:10px; --r-md:16px; --r-lg:24px; --r-xl:36px; --r-pill:999px;
+  --diag:12deg;   /* ângulo da marca: a diagonal do hero */
+
+  /* ---- Sombra ---- */
+  --sombra-1:0 8px 24px -12px rgba(12,35,64,.35);
+  --sombra-2:0 24px 60px -24px rgba(12,35,64,.5);
+  --sombra-amarela:0 18px 40px -16px rgba(255,203,5,.7);
+  --sombra-zap:0 14px 34px -12px rgba(37,211,102,.75);
+
+  /* ---- Movimento ---- */
+  --ease-out:cubic-bezier(.22,1,.36,1);
+  --ease-in-out:cubic-bezier(.65,0,.35,1);
+  --d-fast:.25s; --d-base:.6s; --d-slow:1s;
+  --stagger:.09s;
+
+  /* ---- Camadas ---- */
+  --z-base:1; --z-sticky:50; --z-float:90; --z-top:200; --z-pre:500;
+}
+
+/* alto contraste (botão da barra de acessibilidade) */
+html.hc{
+  --azul-800:#000;--azul-900:#000;--azul-700:#000;--azul-500:#0033CC;--azul-50:#fff;--creme:#fff;
+  --texto-suave:#000;--borda:#000;--texto-inverso-suave:#fff;
+}

@@ -1,0 +1,18 @@
+ESTUDO DE REDESIGN - SITE DE CAMPANHA (Connect Alpha, 11/10/2026)
+
+Abrir:  index.html (site)  |  design-system.html (design system "Voz 22")
+Modo cena para gravar o video:  index.html?cena=1  (abrir por servidor local:
+  node "_ferramentas/preview-local.mjs" "4. Meus Clientes/2. Demos e propostas/demo-flavio-redesign")
+
+Estrutura
+  assets/css/tokens.css      cores, tipo, espaco, forma, movimento (fonte unica)
+  assets/css/components.css  botoes, chips, cartoes, formulario, acordeao, marquee
+  assets/css/site.css        layout de cada secao
+  assets/js/app.js           interacoes (GSAP + ScrollTrigger + Lenis)
+  _build.cjs                 gera o index.html a partir dos dados (conteudo do site oficial)
+
+Regras
+  - Todo texto e numero vem do site oficial; nada inventado. Marcado como "FONTE: SITE OFICIAL".
+  - Nao usar fotos de familia, de terceiros ou de menores (nao foram baixadas).
+  - Rodape e faixa superior avisam: conceito, nao e o site oficial.
+  - Antes de publicar o video: avaliar uso de imagem e lei eleitoral (eleicao 25/10/2026).
